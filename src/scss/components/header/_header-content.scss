@@ -1,0 +1,85 @@
+@use "../../presets/index" as *;
+@use "../../mixins/index" as *;
+
+
+.product-basket {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product__count {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: $color-white;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: $gap-sm;
+    margin-left: 43px;
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 700;
+    border: 1px $color-white solid;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+}
+.main__btn{
+    margin-bottom: 100px;
+}
+.contact-btn:hover {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 700;
+    background-color: $color-hover;
+    border: 1px rgba(0, 0, 0, 0.3) solid;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navigation__container {
+    background-color: $color-dark;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-main {
+    padding-top: 309px;
+}
+
+.main__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    text-align: left;
+    max-width: 604px;
+    max-height: 98px;
+    color: $color-text;
+    letter-spacing: 0.25px;
+    margin-bottom: 75px;
+}
+.main__logo{
+    background-image: url(../../../../../Final-project-layout-main/assets/images/logo-content.svg);
+    width: 601px;
+    height: 194px;
+}
+.main-container {
+    display: flex;
+    gap: $gap-x3;
+    flex-direction: column;
+    max-width: $container-size;
+    align-items: self-start;
+}

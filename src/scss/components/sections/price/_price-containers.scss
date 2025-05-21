@@ -1,0 +1,18 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+
+
+.container-price__bg{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 56px 0;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 76px;
+    justify-content: center
+}
+

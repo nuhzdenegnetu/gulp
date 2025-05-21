@@ -1,0 +1,48 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.section-production{
+    margin-bottom: 174px;
+}
+.production-title {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+    margin-bottom: 4rem;
+}
+
+.production__ellipse {
+    width: 20px;
+    height: 20px;
+    background-color: $color-hover;
+    border-radius: 50%;
+}
+
+.production__item {
+    list-style: none;
+}
+
+.production__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.production__name, .production__description, .production__capacity, .production__origin, .production__price {
+    margin: 0 0 0 5px;
+    font-size: 1rem;
+}
+
+.production-description {
+    margin-bottom: 1rem;
+}
+
+.production__price {
+    color: $color-hover;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+
+
+

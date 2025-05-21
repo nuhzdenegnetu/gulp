@@ -1,0 +1,30 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.production-photo__container {
+    position: relative;
+
+    &::after {
+        content: "SALE";
+        position: absolute;
+        top: -23px;
+        left: -23px;
+        background-color: #ff6600; // Цвет плашки
+        color: #fff; // Цвет текста
+        font-weight: 700;
+        font-size: 16px;
+        padding: 13px 46px;
+        border-radius: 4px; // Закругленные углы
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+}
+
+.production__images {
+    margin-bottom: 7px;
+}
+
+.production__images--active {
+    position: relative;
+}
+

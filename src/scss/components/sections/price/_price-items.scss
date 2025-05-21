@@ -1,0 +1,32 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+
+
+main{
+    margin: 0;
+    padding: 0;
+}
+.section-price{
+    background-image: url(../../../../../../Final-project-layout-main/assets/images/bg-image--price.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    height: 718px;
+    margin-top: 100px;
+    margin-bottom: 106px;
+}
+.price__ellipse{
+    width: 20px; // Размер эллипса
+    height: 20px;
+    background-color: $color-hover;
+    border-radius: 50%; // Превращение в круг
+}
+.price__item{
+    display: flex;
+}
+.price__image{
+    max-width: 70px;
+    max-height: 70px;
+}

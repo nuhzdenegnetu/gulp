@@ -1,0 +1,32 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: min(100% - $gap-lg, 799px);
+    margin-inline: auto;
+    background-color: $color-white;
+}
+
+.form__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.4px;
+    margin: 0;
+}
+
+.form__description {
+    text-align: center;
+    margin: 21px 0 23px 0;
+    font-weight: 400;
+}
+
+.form__input {
+    height: 44px;
+    border: 1px rgba(223, 223, 223, 1) solid;
+    border-radius: 4px;
+    text-transform: capitalize;
+    color: $color-grey-dark;
+}

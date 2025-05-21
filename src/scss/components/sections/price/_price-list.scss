@@ -1,0 +1,32 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.price__list{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    row-gap:60px;
+    column-gap:201px;
+    width: 100%;
+    padding: 0;
+}
+.price__text{
+    font-size: 2rem;
+    color: $color-text;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+}
+.price__time{
+    color: $color-text;
+    font-weight: 400;
+}
+.price__cost{
+    color: $color-text;
+    font-weight: 700;
+}
+.price__object{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+

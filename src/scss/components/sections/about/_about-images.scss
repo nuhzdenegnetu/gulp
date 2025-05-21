@@ -1,0 +1,39 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.about__images {
+    display: flex;
+    align-items: flex-end;
+    gap: $gap;
+}
+
+.about__image {
+    height: 200px;
+    width: 134px;
+}
+
+.about__image--active {
+    width: 197px;
+    height: 293px;
+    object-fit: cover; /* Обрезка изображения для сохранения пропорций */
+    display: block;
+}
+
+.highlight {
+    position: relative; /* Для работы псевдоэлемента */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    top: -16px; /* Верхняя рамка (16px) */
+    left: 20px;
+    right: -16px; /* Рамка выходит за пределы справа */
+    bottom: -16px; /* Нижняя рамка (10px) */
+    border-top: 16px solid $color-hover; /* Верхняя рамка (16px) */
+    border-right: 16px solid $color-hover; /* Рамка справа (5px) */
+    border-bottom: 16px solid $color-hover; /* Рамка снизу (5px) */
+    z-index: -1; /* Размещение позади изображения */
+}

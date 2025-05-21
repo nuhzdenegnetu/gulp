@@ -1,0 +1,54 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.add__btn {
+    text-decoration: none;
+    color: $color-dark;
+    font-weight: 700;
+    border: 1px $color-dark solid;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+}
+
+.shopping__btn--active {
+    background-color: $color-text;
+}
+
+.addition {
+    display: flex;
+    margin: 0 -3px 0 -3px;
+    justify-content: space-around;
+}
+
+.addition__container {
+    display: inline-block; // Кнопка в виде плюсика
+
+    .addition__btn {
+        position: relative;
+        width: 52px; // Размер кнопки
+        height: 52px;
+        background-color: #ffffff; // Цвет фона кнопки
+        border: 1px solid #000; // Рамка кнопки
+        border-radius: 4px; // Скругление углов
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .line {
+            position: absolute;
+            background-color: #000; // Цвет линий
+            border-radius: 3px; // Закругление краёв линий
+
+            &.horizontal {
+                width: 20px; // Длина горизонтальной линии
+                height: 3px; // Толщина линии
+            }
+
+            &.vertical {
+                width: 3px; // Толщина линии
+                height: 20px; // Длина вертикальной линии
+            }
+        }
+    }
+}

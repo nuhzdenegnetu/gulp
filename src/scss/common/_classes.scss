@@ -1,0 +1,53 @@
+@use "../presets/index" as *;
+@use "../mixins/index" as *;
+
+
+.container-width {
+    width: min(100% - $gap-lg, $container-size);
+    margin-inline: auto;
+}
+.about {
+    font-size: 4rem;
+    color: $color-hover;
+    text-align: center;
+    margin: 0;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 76px;
+    justify-content: center
+}
+.ellipse{
+    width: 20px; // Размер эллипса
+    height: 20px;
+    background-color: $color-hover;
+    border-radius: 50%; // Превращение в круг
+}
+
+
+input::-webkit-input-placeholder {
+    opacity: 1; transition: opacity 0.3s ease;
+}
+input::-moz-placeholder {
+    opacity: 1; transition: opacity 0.3s ease;
+}
+input:-moz-placeholder {
+    opacity: 1; transition: opacity 0.3s ease;
+}
+input:-ms-input-placeholder {
+    opacity: 1; transition: opacity 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0; transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder {
+    opacity: 0; transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder {
+    opacity: 0; transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+    opacity: 0; transition: opacity 0.3s ease;
+}

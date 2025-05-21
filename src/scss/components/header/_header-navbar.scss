@@ -1,0 +1,49 @@
+@use "../../presets/index" as *;
+@use "../../mixins/index" as *;
+
+
+.navigation {
+    background-color: $color-dark;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: fixed;
+    z-index: 2;
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    gap: $gap-x2;
+    margin-right: calc($gap-x5 + $gap);
+}
+.navigation__link {
+    color: $color-white;
+    text-decoration: none;
+}
+
+.navigation__link:hover {
+    color: $color-hover;
+    transition: all 0.5s ease;
+    font-weight: 700;
+}
+
+.navigation__item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navigation__item:hover::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: -8px;
+    background-color: #DA6401;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,39 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+
+.section-reviews {
+    padding: 63px 0;
+    width: 100%;
+    background-image: url(../../../../../../Final-project-layout-main/assets/images/Group19.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 0 130px 0;
+}
+
+.reviews-title {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+    margin-bottom: 64px;
+}
+
+.reviews-description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 27px 483px;
+}
+
+.reviews-description__title {
+    color: $color-hover;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 0 13px 0;
+}
+
+.reviews-description__text {
+    color: $color-white;
+    line-height: 19.5px;
+    margin: 0;
+}

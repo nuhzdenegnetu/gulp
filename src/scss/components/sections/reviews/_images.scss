@@ -1,0 +1,35 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.carousel {
+    display: flex;
+    gap: $gap-lg;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 46px;
+}
+
+.carousel__images {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.carousel__images--active {
+    width: 197px;
+    height: 294px;
+    content: '';
+    top: 6px; /* Смещаем рамку выше */
+    left: 0; /* Смещаем рамку левее */
+    border: 3px solid white; /* Белая рамка */
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.arrow {
+    font-size: 90px;
+    color: orange;
+    cursor: pointer;
+    user-select: none;
+}

@@ -1,0 +1,8 @@
+@use "../presets/index" as *;
+@use "../mixins/index" as *;
+
+html{
+    font-family: $font-main;
+    margin: 0;
+    padding: 0;
+}

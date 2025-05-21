@@ -1,0 +1,177 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+
+.input-master__title {
+    margin: 0 0 10px 24px;
+}
+
+/* Радиокнопки и текст рядом */
+.input-master__label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1em;
+    color: #444;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Стили для input (радиокнопок) */
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .custom-radio::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: $color-hover; /* Оранжевый цвет заполнения */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.input__name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 21px 0 0 0;
+    width: 100%;
+}
+
+.input-name__title {
+    margin: 0 0 6px 24px;
+}
+
+
+input::placeholder {
+    transform: translateX(24px);
+}
+
+input:focus {
+    padding: 0 0 0 22px;
+}
+
+.form__name {
+    margin: 0;
+    padding: 0;
+}
+
+.md {
+    width: 215px;
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+.md:focus {
+    padding-right: 22px;
+    width: 215px;
+}
+
+.timing {
+    display: flex;
+    gap: 25px;
+}
+
+
+.master {
+    margin: 20px 0 0 0;
+}
+
+
+.service {
+    margin: 20px 0 3rem 0;
+}
+
+.service__title {
+    margin: 0 0 6px 24px;
+}
+
+
+/* Радиокнопки и текст рядом */
+.input-service__label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1em;
+    color: #444;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    min-width: 19px;
+    min-height: 19px;
+    border: 2px solid black; /* Чёрная рамка для неактивного состояния */
+    border-radius: 4px; /* Скругление углов */
+    background-color: white; /* Белый фон по умолчанию */
+    position: relative;
+    margin-right: 7px;
+}
+
+.custom-radio {
+    display: inline-block;
+    min-width: 16px;
+    min-height: 16px;
+    border: 2px solid black; /* Чёрный контур */
+    border-radius: 50%; /* Делаем круг */
+    position: relative;
+    margin-right: 11px;
+}
+
+
+/* Стили для input (радиокнопок) */
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: $color-hover; /* Оранжевый фон для выбранного состояния */
+    border-color: $color-hover;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2px;
+    width: 8px;
+    height: 14px;
+    border: solid white; /* Белая галочка */
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+input:focus {
+    width: 520px;
+    height: 44px;
+    color: $color-dark;
+    border: 1px transparent $color-hover;
+    outline: none;
+}
+
+.sending {
+    margin: 0 0 5rem 0;
+}
+
+.sending__btn {
+    background-color: $color-dark;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    border: 1px #ffffff solid;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+}
+
+input [type="time"] {
+    margin-left: 40px;
+}
+
+

@@ -1,0 +1,57 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+
+
+.contact-info{
+    margin-bottom: 130px;
+}
+.contact-info__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.contact-info__title{
+    color: $color-hover;
+    font-size: 4rem;
+    margin: 0;
+}
+.contact-info__list{
+    margin-bottom: 26px;
+}
+.info__link{
+    color: $color-dark;
+    text-decoration: none;
+}
+.item__mail{
+    margin-bottom: 16px;
+}
+.item__tel{
+    margin-bottom: 16px;
+}
+.contact-info__icons{
+    display: flex;
+    gap: 6px;
+}
+.icon__instagram{
+    margin-right: 4px;
+}
+.contact-info__title--schedule{
+    color: $color-hover;
+    font-size: 4rem;
+    margin: 0;
+}
+.contact-info__item{
+    list-style: none;
+}
+.contact-info__schedule{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 14px;
+    padding: 18px 40px;
+}
+.contact-info__schedule--day{
+    margin: 0;
+}

@@ -1,0 +1,50 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.section-form {
+    padding: 63px 0;
+    width: 100%;
+    background-image: url(../../../../../../Final-project-layout-main/assets/images/Group19.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 0 100px 0;
+}
+
+.container__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.form-container {
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100% - 64px, 547px);
+    margin-inline: auto;
+    margin: 54px 0 0 0;
+}
+
+.input-master__container {
+    border: 1px rgba(223, 223, 223, 1) solid;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-template-rows: repeat(2, 1fr); /* 2 строки */
+    column-gap: 120px;
+    row-gap: 5px;
+    padding: 18px 29px;
+}
+
+.input-service__container {
+    border: 1px rgba(223, 223, 223, 1) solid;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-template-rows: repeat(3, 1fr); /* 2 строки */
+    column-gap: 120px;
+    row-gap: 5px;
+    padding: 10px 29px;
+}
