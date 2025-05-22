@@ -27,11 +27,10 @@
 gulp/
 ├── src/
 │   ├── scss/         # SCSS файлы
+├── assets/           # Изображения и другие ресурсы
 │   ├── js/           # JavaScript файлы
-├── dist/
 │   ├── css/          # Скомпилированные CSS файлы
 │       ├── style.css.map # Sourcemap для CSS
-├── assets/           # Изображения и другие ресурсы
 ├── gulpfile.js       # Конфигурация Gulp
 ├── package.json      # Зависимости проекта
 ├── index.html        # Главная страница
@@ -55,4 +54,4 @@ gulp/
   ```bash
   npm run build
   ```
-  Компилирует SCSS, минифицирует CSS и копирует JavaScript файлы в папку `dist`.
+  Компилирует SCSS, минифицирует CSS и копирует файлы в папку `assets/css`.

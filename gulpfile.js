@@ -15,12 +15,8 @@ const paths = {
     },
     styles: {
         src: './src/scss/**/*.scss',
-        dest: './dist/css/'
+        dest: './assets/css/'
     },
-    scripts: {
-        src: './src/js/**/*.js',
-        dest: './dist/js/'
-    }
 };
 
 // Compile SCSS to CSS, add vendor prefixes, and create sourcemaps
@@ -32,7 +28,7 @@ function styles() {
         }).on('error', sass.logError))
         .pipe(autoprefixer())
         // Исправляем пути к изображениям
-        .pipe(replace(/url\([\.\.\/]+gulp\/assets\/images\//g, 'url(../../assets/images/'))
+        .pipe(replace(/url\([\.\.\/]+gulp\/assets\/images\//g, 'url(../images/'))
         // Группируем медиа-запросы
         .pipe(mediaQuery())
         .pipe(sourcemaps.write('./'))
@@ -41,26 +37,20 @@ function styles() {
 }
 
 // Minify CSS files
-// Minify CSS files
 function minifyCss() {
     return gulp.src(`${paths.styles.dest}*.css`)
         .pipe(cleanCSS({
-            compatibility: 'ie11',
             level: {
                 1: {
                     specialComments: 0
+                },
+                2: {
+                    all: true
                 }
             }
         }))
         // Убираем переименование и просто перезаписываем исходный файл
         .pipe(gulp.dest(paths.styles.dest))
-        .pipe(browserSync.stream());
-}
-
-// Copy and process JavaScript files
-function scripts() {
-    return gulp.src(paths.scripts.src)
-        .pipe(gulp.dest(paths.scripts.dest))
         .pipe(browserSync.stream());
 }
 
@@ -74,21 +64,19 @@ function serve() {
     });
 
     gulp.watch(paths.styles.src, styles);
-    gulp.watch(paths.scripts.src, scripts);
     gulp.watch(paths.html.src).on('change', browserSync.reload);
 }
 
 
-// Build task
-const build = gulp.series(styles, minifyCss, scripts);
+// Build task (для production)
+const build = gulp.series(styles, minifyCss);
 
-// Dev task with watch
-const dev = gulp.series(build, serve);
+// Dev task (для разработки без минификации)
+const dev = gulp.series(styles, serve);
 
 // Export tasks
 exports.styles = styles;
 exports.minifyCss = minifyCss;
-exports.scripts = scripts;
 exports.serve = serve;
 exports.build = build;
 exports.default = dev;
