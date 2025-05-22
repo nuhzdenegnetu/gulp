@@ -1,0 +1,1784 @@
+@charset "UTF-8";
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  margin: 0;
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* ul */
+
+/* xl */
+
+/* lg */
+
+/* md */
+
+/* sm */
+
+/* xs */
+
+/* xx */
+
+.container-width {
+  width: min(100% - 30px, 1300px);
+  margin-inline: auto;
+}
+
+.about {
+  font-size: 4rem;
+  color: #DA6401;
+  text-align: center;
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 76px;
+  justify-content: center;
+}
+
+.ellipse {
+  width: 20px;
+  height: 20px;
+  background-color: #DA6401;
+  border-radius: 50%;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+html {
+  font-family: "montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.production-arrows {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.header {
+  background-image: url(../../assets/images/bg-image--header.png);
+  background-position: center;
+}
+
+.product-basket {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product__count {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 43px;
+}
+
+.contact-btn {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  border: 1px #ffffff solid;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+}
+
+.main__btn {
+  margin-bottom: 100px;
+}
+
+.contact-btn:hover {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #DA6401;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navigation__container {
+  background-color: #222222;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-main {
+  padding-top: 309px;
+}
+
+.main__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.01px;
+  text-align: left;
+  max-width: 604px;
+  max-height: 98px;
+  color: #FFF2E5;
+  letter-spacing: 0.25px;
+  margin-bottom: 75px;
+}
+
+.main__logo {
+  background-image: url(../../assets/images/logo-content.svg);
+  width: 601px;
+  height: 194px;
+}
+
+.main-container {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  max-width: 1300px;
+  align-items: self-start;
+}
+
+.navigation {
+  background-color: #222222;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: fixed;
+  z-index: 2;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 120px;
+}
+
+.navigation__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #DA6401;
+  transition: all 0.5s ease;
+  font-weight: 700;
+}
+
+.navigation__item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navigation__item:hover::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: -8px;
+  background-color: #DA6401;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.container-price__bg {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 56px 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 76px;
+  justify-content: center;
+}
+
+.price__list {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  row-gap: 60px;
+  -moz-column-gap: 201px;
+  column-gap: 201px;
+  width: 100%;
+  padding: 0;
+}
+
+.price__text {
+  font-size: 2rem;
+  color: #FFF2E5;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+
+.price__time {
+  color: #FFF2E5;
+  font-weight: 400;
+}
+
+.price__cost {
+  color: #FFF2E5;
+  font-weight: 700;
+}
+
+.price__object {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.section-price {
+  background-image: url(../../assets/images/bg-image--price.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 718px;
+  margin-top: 100px;
+  margin-bottom: 106px;
+}
+
+.price__ellipse {
+  width: 20px;
+  height: 20px;
+  background-color: #DA6401;
+  border-radius: 50%;
+}
+
+.price__item {
+  display: flex;
+}
+
+.price__image {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.section-about {
+  margin-bottom: 116px;
+}
+
+.about-title {
+  margin: 0 0 44px 0;
+  justify-content: flex-end;
+}
+
+.about__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__text {
+  width: 432px;
+  height: 203px;
+  line-height: 1.238rem;
+}
+
+.about-info__title {
+  margin: 0;
+  font-size: 2rem;
+  color: #DA6401;
+  font-weight: 700;
+}
+
+.about__images {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.about__image {
+  height: 200px;
+  width: 134px;
+}
+
+.about__image--active {
+  width: 197px;
+  height: 293px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* Обрезка изображения для сохранения пропорций */
+  display: block;
+}
+
+.highlight {
+  position: relative;
+  /* Для работы псевдоэлемента */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  /* Верхняя рамка (16px) */
+  left: 20px;
+  right: -16px;
+  /* Рамка выходит за пределы справа */
+  bottom: -16px;
+  /* Нижняя рамка (10px) */
+  border-top: 16px solid #DA6401;
+  /* Верхняя рамка (16px) */
+  border-right: 16px solid #DA6401;
+  /* Рамка справа (5px) */
+  border-bottom: 16px solid #DA6401;
+  /* Рамка снизу (5px) */
+  z-index: -1;
+  /* Размещение позади изображения */
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: min(100% - 30px, 799px);
+  margin-inline: auto;
+  background-color: #ffffff;
+}
+
+.form__title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+
+.form__description {
+  text-align: center;
+  margin: 21px 0 23px 0;
+  font-weight: 400;
+}
+
+.form__input {
+  height: 44px;
+  border: 1px rgb(223, 223, 223) solid;
+  border-radius: 4px;
+  text-transform: capitalize;
+  color: rgba(154, 154, 154, 0.49);
+}
+
+.input-master__title {
+  margin: 0 0 10px 24px;
+}
+
+/* Радиокнопки и текст рядом */
+
+.input-master__label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1em;
+  color: #444;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Стили для input (радиокнопок) */
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #DA6401;
+  /* Оранжевый цвет заполнения */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input__name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 21px 0 0 0;
+  width: 100%;
+}
+
+.input-name__title {
+  margin: 0 0 6px 24px;
+}
+
+input::-moz-placeholder {
+  transform: translateX(24px);
+}
+
+input::placeholder {
+  transform: translateX(24px);
+}
+
+input:focus {
+  padding: 0 0 0 22px;
+}
+
+.form__name {
+  margin: 0;
+  padding: 0;
+}
+
+.md {
+  width: 215px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.md:focus {
+  padding-right: 22px;
+  width: 215px;
+}
+
+.timing {
+  display: flex;
+  gap: 25px;
+}
+
+.master {
+  margin: 20px 0 0 0;
+}
+
+.service {
+  margin: 20px 0 3rem 0;
+}
+
+.service__title {
+  margin: 0 0 6px 24px;
+}
+
+/* Радиокнопки и текст рядом */
+
+.input-service__label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1em;
+  color: #444;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  min-width: 19px;
+  min-height: 19px;
+  border: 2px solid black;
+  /* Чёрная рамка для неактивного состояния */
+  border-radius: 4px;
+  /* Скругление углов */
+  background-color: white;
+  /* Белый фон по умолчанию */
+  position: relative;
+  margin-right: 7px;
+}
+
+.custom-radio {
+  display: inline-block;
+  min-width: 16px;
+  min-height: 16px;
+  border: 2px solid black;
+  /* Чёрный контур */
+  border-radius: 50%;
+  /* Делаем круг */
+  position: relative;
+  margin-right: 11px;
+}
+
+/* Стили для input (радиокнопок) */
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + .custom-checkbox {
+  background-color: #DA6401;
+  /* Оранжевый фон для выбранного состояния */
+  border-color: #DA6401;
+}
+
+input[type=checkbox]:checked + .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  width: 8px;
+  height: 14px;
+  border: solid white;
+  /* Белая галочка */
+  border-width: 0 3px 3px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+input:focus {
+  width: 520px;
+  height: 44px;
+  color: #222222;
+  border: 1px transparent #DA6401;
+  outline: none;
+}
+
+.sending {
+  margin: 0 0 5rem 0;
+}
+
+.sending__btn {
+  background-color: #222222;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  border: 1px #ffffff solid;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+}
+
+input [type=time] {
+  margin-left: 40px;
+}
+
+.section-form {
+  padding: 63px 0;
+  width: 100%;
+  background-image: url(../../assets/images/Group19.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 0 100px 0;
+}
+
+.container__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.form-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100% - 64px, 547px);
+  margin-inline: auto;
+  margin: 54px 0 0 0;
+}
+
+.input-master__container {
+  border: 1px rgb(223, 223, 223) solid;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 колонки */
+  grid-template-rows: repeat(2, 1fr);
+  /* 2 строки */
+  -moz-column-gap: 120px;
+  column-gap: 120px;
+  row-gap: 5px;
+  padding: 18px 29px;
+}
+
+.input-service__container {
+  border: 1px rgb(223, 223, 223) solid;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 колонки */
+  grid-template-rows: repeat(3, 1fr);
+  /* 2 строки */
+  -moz-column-gap: 120px;
+  column-gap: 120px;
+  row-gap: 5px;
+  padding: 10px 29px;
+}
+
+.section-production {
+  margin-bottom: 174px;
+}
+
+.production-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 4rem;
+}
+
+.production__ellipse {
+  width: 20px;
+  height: 20px;
+  background-color: #DA6401;
+  border-radius: 50%;
+}
+
+.production__item {
+  list-style: none;
+}
+
+.production__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.production__name,
+.production__description,
+.production__capacity,
+.production__origin,
+.production__price {
+  margin: 0 0 0 5px;
+  font-size: 1rem;
+}
+
+.production-description {
+  margin-bottom: 1rem;
+}
+
+.production__price {
+  color: #DA6401;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.production-photo__container {
+  position: relative;
+}
+
+.production-photo__container::after {
+  content: "SALE";
+  position: absolute;
+  top: -23px;
+  left: -23px;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 13px 46px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.production__images {
+  margin-bottom: 7px;
+}
+
+.production__images--active {
+  position: relative;
+}
+
+.add__btn {
+  text-decoration: none;
+  color: #222222;
+  font-weight: 700;
+  border: 1px #222222 solid;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+}
+
+.shopping__btn--active {
+  background-color: #FFF2E5;
+}
+
+.addition {
+  display: flex;
+  margin: 0 -3px 0 -3px;
+  justify-content: space-around;
+}
+
+.addition__container {
+  display: inline-block;
+}
+
+.addition__container .addition__btn {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addition__container .addition__btn .line {
+  position: absolute;
+  background-color: #000;
+  border-radius: 3px;
+}
+
+.addition__container .addition__btn .line.horizontal {
+  width: 20px;
+  height: 3px;
+}
+
+.addition__container .addition__btn .line.vertical {
+  width: 3px;
+  height: 20px;
+}
+
+.section-reviews {
+  padding: 63px 0;
+  width: 100%;
+  background-image: url(../../assets/images/Group19.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 0 130px 0;
+}
+
+.reviews-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 64px;
+}
+
+.reviews-description {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 27px 483px;
+}
+
+.reviews-description__title {
+  color: #DA6401;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 0 13px 0;
+}
+
+.reviews-description__text {
+  color: #ffffff;
+  line-height: 19.5px;
+  margin: 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.carousel__images {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.carousel__images--active {
+  width: 197px;
+  height: 294px;
+  content: "";
+  top: 6px;
+  /* Смещаем рамку выше */
+  left: 0;
+  /* Смещаем рамку левее */
+  border: 3px solid white;
+  /* Белая рамка */
+  pointer-events: none;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.arrow {
+  font-size: 90px;
+  color: orange;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.contact-info {
+  margin-bottom: 130px;
+}
+
+.contact-info__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.contact-info__title {
+  color: #DA6401;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.contact-info__list {
+  margin-bottom: 26px;
+}
+
+.info__link {
+  color: #222222;
+  text-decoration: none;
+}
+
+.item__mail {
+  margin-bottom: 16px;
+}
+
+.item__tel {
+  margin-bottom: 16px;
+}
+
+.contact-info__icons {
+  display: flex;
+  gap: 6px;
+}
+
+.icon__instagram {
+  margin-right: 4px;
+}
+
+.contact-info__title--schedule {
+  color: #DA6401;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.contact-info__item {
+  list-style: none;
+}
+
+.contact-info__schedule {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 14px;
+  padding: 18px 40px;
+}
+
+.contact-info__schedule--day {
+  margin: 0;
+}
+
+.copyright {
+  background-color: #222222;
+  padding-top: 42px;
+  padding-bottom: 168px;
+  color: #ffffff;
+}
+
+.copyright__nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.copyright-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-info {
+  display: flex;
+  gap: 68px;
+  flex-wrap: wrap;
+}
+
+.copyright-navbar__list {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.copyright__text {
+  margin-bottom: 20px;
+}
+
+.copyright__logo {
+  margin-top: 2px;
+}
+
+.copyright-navbar__item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+}
+
+.copyright-navbar__link {
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+}
+
+.copyright-navbar__link:hover {
+  color: #DA6401;
+  transition: all 0.5s ease;
+  font-weight: 700;
+}
+
+.copyright-navbar__link:hover::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: -8px;
+  top: 7px;
+  background-color: #DA6401;
+  border-radius: 50%;
+  transition: all 2s ease;
+}
+
+.copyright-info__title {
+  margin: 0 0 21px 0;
+}
+
+@media screen and (min-width: 1014px) {
+  .side-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1119px) {
+  .section-price {
+    background-image: none;
+    margin-bottom: 0;
+  }
+
+  .price__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 54px;
+    grid-row-gap: 61px;
+    justify-content: center;
+  }
+
+  .price__item {
+    justify-self: center;
+  }
+
+  .about {
+    font-size: 2rem;
+  }
+
+  .about__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-info {
+    margin-left: 106px;
+  }
+
+  .production__list {
+    row-gap: 64px;
+    padding: 0;
+  }
+
+  .reviews-description__title {
+    font-size: 1rem;
+  }
+
+  .reviews-description {
+    margin: 0 0 0 243px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .contact-info__title {
+    font-size: 2rem;
+  }
+
+  .contact-info__items {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  /* Скрываем элементы навбара */
+
+  .navigation__list,
+  .navigation__logo,
+  .contact {
+    display: none;
+  }
+
+  /* Контейнер навигации выравнивается вправо */
+
+  .navigation__container {
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .side-menu__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* Боковое меню */
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -395px;
+    width: 351px;
+    height: 100%;
+    background-color: #222222;
+    /* Замените $navbar-color на переменную цвета навбара */
+    color: #fff;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .side-menu.active {
+    left: 0;
+    /* Выезд меню */
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-menu__logo {
+    margin-bottom: 20px;
+    margin-top: 31px;
+  }
+
+  .side-menu__nav {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 41px;
+  }
+
+  .side-menu__nav li {
+    margin-bottom: 2rem;
+  }
+
+  .side-menu__nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .side-menu__nav li a:hover {
+    text-decoration: underline;
+  }
+
+  .side-menu__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 62%;
+  }
+
+  .side-menu__buttons button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 700;
+    border: 1px #ffffff solid;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+  }
+
+  /* Кнопка гамбургера */
+
+  .hamburger {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1100;
+    color: white;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .hamburger.hamburger--active {
+    transform: rotate(90deg);
+    /* Пример: поворот для эффекта */
+    color: white;
+    /* Изменение цвета (например, на красный) */
+    left: 334px;
+    font-size: 1.5rem;
+    top: 30px;
+  }
+
+  /* Корзина */
+
+  .cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    z-index: 1100;
+  }
+
+  .cart span {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  .header {
+    background-repeat: no-repeat;
+  }
+
+  .contact-info__img {
+    width: 322px;
+    height: 188px;
+  }
+
+  .carousel__images {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+  }
+
+  .carousel__images-about {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+  }
+
+  .carousel__images--active {
+    width: 197px;
+    height: 294px;
+    content: "";
+    top: 6px;
+    /* Смещаем рамку выше */
+    left: 0;
+    /* Смещаем рамку левее */
+    border: 3px solid white;
+    /* Белая рамка */
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 1;
+    visibility: visible;
+  }
+
+  .main__logo {
+    background-image: url(../../assets/images/logo-tablet.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .container-price__bg {
+    padding: 30px 0;
+  }
+
+  .about__text {
+    width: auto;
+    height: auto;
+  }
+
+  .timing {
+    width: 100%;
+    max-width: 500px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .md {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main__title {
+    margin-top: -100px;
+  }
+
+  .main__logo {
+    background-image: url(../../assets/images/logo-phone.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .price__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-price {
+    margin-bottom: 300px;
+  }
+
+  .timing {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .master {
+    width: 100%;
+  }
+
+  .input-master {
+    width: 100%;
+  }
+
+  .input-master__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .input-service {
+    width: 100%;
+  }
+
+  .input-service__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__list {
+    justify-content: center;
+  }
+
+  .production-arrows {
+    visibility: visible;
+  }
+
+  .production__item {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+  }
+
+  .section-production {
+    margin: 0;
+    padding: 0;
+  }
+
+  .production__item--active {
+    visibility: visible;
+    width: auto;
+    height: auto;
+  }
+
+  .reviews-description {
+    margin: 0;
+  }
+
+  #prev {
+    visibility: hidden;
+  }
+
+  .carousel {
+    justify-content: flex-start;
+  }
+
+  .section-reviews {
+    margin: 0 0 65px 0;
+  }
+
+  .contact__title--schedule {
+    font-size: 1rem;
+  }
+
+  .contact-info__title {
+    font-size: 1rem;
+  }
+
+  .contact-info__list {
+    padding-left: 0;
+  }
+
+  .contact-info__schedule {
+    padding-left: 0;
+  }
+
+  .copyright-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .copyright__nav {
+    flex-direction: column;
+  }
+
+  .copyright-info {
+    gap: 1px;
+    flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
